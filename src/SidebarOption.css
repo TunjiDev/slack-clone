@@ -1,0 +1,59 @@
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding-left: 2px;
+  cursor: pointer;
+}
+
+.sidebarOption:hover {
+  background-color: #340e36;
+  opacity: 0.9;
+}
+
+.sidebarOption__icon {
+  padding: 10px;
+  font-size: 15px !important;
+}
+
+.sidebarOption__channel {
+  padding: 10px 0;
+}
+
+.sidebarOption__hash {
+  padding: 10px;
+}
+
+.sidebarOption > h3 {
+  font-weight: 500;
+}
+
+/* ================================================ SCREENS 767PX AND LOWER ====================================================== */
+
+@media (max-width: 767px) {
+  .sidebarOption {
+    padding-left: 1px;
+    font-size: 10px;
+  }
+
+  .sidebarOption__icon {
+    padding: 6px;
+    font-size: 13px !important;
+  }
+
+  .sidebarOption__hash {
+    padding: 8px;
+  }
+
+  .sidebarOption > h3 {
+    font-weight: 300;
+  }
+}
+
+/* ================================================ SCREENS 400PX AND LOWER ====================================================== */
+@media (max-width: 400px) {
+  .sidebarOption {
+    padding-left: 0px;
+    font-size: 8px;
+  }
+}

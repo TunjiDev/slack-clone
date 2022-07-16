@@ -1,0 +1,41 @@
+.message {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.message > img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.message__info {
+  padding-left: 10px;
+}
+
+.message__timestamp {
+  color: gray;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+/* ================================================ SCREENS 400PX AND LOWER ====================================================== */
+@media (max-width: 400px) {
+  .message {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .message > img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  .message__timestamp {
+    font-weight: 200;
+    font-size: 10px;
+  }
+}
