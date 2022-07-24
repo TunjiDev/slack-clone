@@ -25,3 +25,10 @@
   background-color: #0a8d48 !important;
   color: white;
 }
+
+/* ================================================ SCREENS 400PX AND LOWER ====================================================== */
+@media (max-width: 400px) {
+  .login__container > h1 {
+    font-size: 20px;
+  }
+}

@@ -73,6 +73,10 @@
 
 /* ================================================ SCREENS 400PX AND LOWER ====================================================== */
 @media (max-width: 400px) {
+  .sidebar {
+    margin-top: 30px;
+  }
+
   .sidebar__info {
     margin-right: 5px;
   }

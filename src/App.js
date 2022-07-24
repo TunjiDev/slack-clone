@@ -21,6 +21,10 @@ function App() {
           <>
             <Header />
             <div className="app__body">
+              <label htmlFor="sidebar" className="app__toggleSidebar">
+                Toggle Sidebar
+              </label>
+              <input type="checkbox" name="" id="sidebar" />
               <Sidebar />
               <Switch>
                 {/* React-Router -> Chat screen*/}
@@ -29,7 +33,7 @@ function App() {
                   <Chat />
                 </Route>
                 <Route path="/">
-                  <h1>Welcome</h1>
+                  <h1 className="welcome">Welcome</h1>
                 </Route>
               </Switch>
             </div>

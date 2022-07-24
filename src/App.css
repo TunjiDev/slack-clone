@@ -7,3 +7,36 @@ body {
   display: flex;
   height: 100vh;
 }
+
+input[type="checkbox"],
+.app__toggleSidebar {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.app__toggleSidebar {
+  background-color: var(--slack-color);
+  text-align: center;
+  color: white;
+  padding: 5px 0px;
+}
+
+.welcome {
+  text-align: center;
+  padding-left: 60px;
+  padding-top: 30px;
+}
+
+/* ================================================ SCREENS 400PX AND LOWER ====================================================== */
+
+@media (max-width: 400px) {
+  .app__toggleSidebar {
+    display: block;
+    opacity: 0.5;
+  }
+
+  input[type="checkbox"]:checked ~ .sidebar {
+    display: none;
+  }
+}
